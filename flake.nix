@@ -7,7 +7,7 @@
         path = ./supercollider;
 	description = "A simple SuperCollider project";
       };
-      r-studio = {
+      rstudio = {
         path = ./rstudio;
 	description = "R Studio setup with packages";
       };
