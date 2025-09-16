@@ -23,3 +23,10 @@ Further documentation can be found at <https://hexdocs.pm/@@@PROJECT@@@>.
 gleam run   # Run the project
 gleam test  # Run the tests
 ```
+
+## Nix
+
+```sh
+nix build   # Build your package with Nix
+nix run     # Build and run the package with Nix
+```
