@@ -7,5 +7,5 @@ be improved feel free to open a PR (I can't guarantee any merges of course).
 To use these templates use the following command:
 
 ```nix
-nix flake init -t https://codeberg.org/ginkogruen/nix-templates#gleam
+nix flake init -t git+https://codeberg.org/ginkogruen/nix-templates#gleam
 ```
