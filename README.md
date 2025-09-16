@@ -6,6 +6,6 @@ be improved feel free to open a PR (I can't guarantee any merges of course).
 
 To use these templates use the following command:
 
-```nix
+```bash
 nix flake init -t git+https://codeberg.org/ginkogruen/nix-templates.git#gleam
 ```
