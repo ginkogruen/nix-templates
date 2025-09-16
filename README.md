@@ -6,6 +6,14 @@ be improved feel free to open a PR (I can't guarantee any merges of course).
 
 To use these templates use the following command:
 
+## Gleam
+
 ```sh
 nix flake init -t git+https://codeberg.org/ginkogruen/nix-templates.git#gleam
+```
+
+## Rust
+
+```sh
+nix flake init -t git+https://codeberg.org/ginkogruen/nix-templates.git#rust
 ```

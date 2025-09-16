@@ -10,6 +10,9 @@
       flake.templates = {
         gleam.path = ./templates/gleam;
         gleam.description = "Gleam + nix-gleam";
+
+        rust.path = ./templates/rust;
+        rust.description = "Rust + devenv";
       };
     });
 }
