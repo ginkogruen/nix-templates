@@ -4,8 +4,18 @@ My personal collection of development templates which are opinionated and tailor
 tastes. But if you happen to find and error or have an idea how a template can
 be improved feel free to open a PR (I can't guarantee any merges of course).
 
-To use these templates use the following command:
+## Available templates
+
+### Gleam
+
+A template for the functional programming language Gleam running on the BEAM virtual machine.
+
+<details>
+<summary>Template shell command</summary>
+
+**Codeberg**:
 
 ```sh
 nix flake init -t git+https://codeberg.org/ginkogruen/nix-templates.git#gleam
 ```
+</details>
