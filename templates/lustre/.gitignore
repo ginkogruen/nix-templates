@@ -1,0 +1,18 @@
+# Gleam
+*.beam
+*.ez
+/build
+erl_crash.dump
+
+# Direnv
+.direnv
+
+# Devenv (not used but still included)
+.devenv*
+devenv.local.nix
+
+# Pre-commit (from devenv)
+.pre-commit-config.yaml
+
+# Nix
+result

@@ -15,6 +15,9 @@
       flake.templates = {
         gleam.path = ./templates/gleam;
         gleam.description = "Gleam + nix-gleam";
+
+        lustre.path = ./templates/lustre;
+        lustre.description = "Lustre + TailwindCSS + Gleam + nix-gleam";
       };
     });
 }

@@ -30,3 +30,25 @@ nix flake init -t github:ginkogruen/nix-templates#gleam
 
 </details>
 
+### Lustre
+
+A template for working with the Lustre web framework bases on the Gleam
+programming language.
+
+<details>
+<summary>Template shell command</summary>
+<br>
+
+**Codeberg**:
+
+```sh
+nix flake init -t git+https://codeberg.org/ginkogruen/nix-templates.git#lustre
+```
+
+**GitHub**:
+
+```sh
+nix flake init -t github:ginkogruen/nix-templates#lustre
+```
+
+</details>
