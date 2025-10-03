@@ -18,6 +18,9 @@
 
         lustre.path = ./templates/lustre;
         lustre.description = "Lustre + TailwindCSS + Gleam + nix-gleam";
+
+        rust.path = ./templates/rust;
+        rust.description = "Rust";
       };
     });
 }
