@@ -52,3 +52,25 @@ nix flake init -t github:ginkogruen/nix-templates#lustre
 ```
 
 </details>
+
+### Rust
+
+A template for the systems programming language Rust.
+
+<details>
+<summary>Template shell command</summary>
+<br>
+
+**Codeberg**:
+
+```sh
+nix flake init -t git+https://codeberg.org/ginkogruen/nix-templates.git#rust
+```
+
+**GitHub**:
+
+```sh
+nix flake init -t github:ginkogruen/nix-templates#rust
+```
+
+</details>
