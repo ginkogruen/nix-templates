@@ -2,7 +2,7 @@
   description = "Rust development";
 
   inputs = {
-    nixpgks.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
   };
 
@@ -30,7 +30,7 @@
                     }
 
                     # Read project folder name
-                    # and convert it to snake_case to satisfy Gleam
+                    # and convert it to kebab-case
                     let project_name = './' 
                     | path expand
                     | path basename
