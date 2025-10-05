@@ -17,10 +17,10 @@ target = "javascript"
 gleam_stdlib = ">= 0.44.0 and < 2.0.0"
 lustre = ">= 5.3.5 and < 6.0.0"
 
-# Fixes bug with lustre_dev_tools refer to this:
-# https://hexdocs.pm/lustre_dev_tools/lustre/dev.html#module-name
-#gleam_json = "1.0.1"
- 
 [dev-dependencies]
 gleeunit = ">= 1.0.0 and < 2.0.0"
-lustre_dev_tools = ">= 1.9.2 and < 2.0.0"
+lustre_dev_tools = ">= 2.0.0 and < 3.0.0"
+
+[tools.lustre.bin]
+bun = "system"
+tailwindcss = "system"

@@ -57,8 +57,8 @@
                       ./gleam.toml
                       ./README.md
                       ./src/@@@PROJECT@@@.gleam
+                      ./src/@@@PROJECT@@@.css
                       ./test/@@@PROJECT@@@_test.gleam
-                      ./index.html
                     ]
 
                     def replace-placeholder-name [input: string] {
@@ -84,43 +84,6 @@
                     # Initialize jj repository
                     ^${lib.getExe pkgs.jujutsu} git init --colocate
                   '';
-              link-lustre-binaries =
-                pkgs.writers.writeNuBin "link-lustre-binaries" # nu
-                  ''
-                    # Check if '.git' exists to prevent running this from a path thats not the repo root
-                    if not ('.git' | path exists) {
-                      exit 0
-                    }
-
-                    if not ('./build/.lustre/bin' | path exists) {
-                      mkdir ./build/.lustre/bin
-                    }
-
-                    # FIX: I couldn't get lustre to pick up on the tailwindcss binary; It would still download it.
-                    #if not (('./build/.lustre/bin/tailwind' | path type) == 'symlink') {
-                    #  rm --force ./build/.lustre/bin/tailwind
-                    #  ln --symbolic -T ${lib.getExe pkgs.tailwindcss_4} ./build/.lustre/bin/tailwind
-                    #}
-
-                    if not (('./build/.lustre/bin/esbuild' | path type) == 'symlink') {
-                      rm --force ./build/.lustre/bin/esbuild
-                      ln --symbolic -T ${lib.getExe pkgs.esbuild} ./build/.lustre/bin/esbuild
-                    }
-                  '';
-              # NOTE: For running tailwindcss and lustre together
-              # This is needed (or convenient) because I couldn't get supplying my own
-              # TailwindCSS to work (neither pkg in path nor symlink shenanigans).
-              #
-              # NOTE: It is run with this command
-              #concurrently --success first --raw \
-              #'tailwindcss -i src/@@@PROJECT@@@.css -o priv/static/@@@PROJECT@@@.css -w' \
-              #'gleam run -m lustre/dev start --detect-tailwind=false'
-              run-dev-server = pkgs.writers.writeBashBin "run-dev-server" ''
-                ${lib.getExe pkgs.concurrently} --sucess first --raw \
-                '${lib.getExe pkgs.tailwindcss_4} -i src/styles.css -o priv/static/styles.css -w' \
-                '${lib.getExe pkgs.gleam} run -m lustre/dev start --detect-tailwind=false'
-              '';
-
             in
             pkgs.mkShell {
               packages = [
@@ -136,15 +99,11 @@
                 # For lustre specifically
                 pkgs.inotify-tools
                 pkgs.tailwindcss_4
-                pkgs.nodejs
-                pkgs.esbuild
-
-                run-dev-server
+                pkgs.bun
               ];
 
               shellHook = ''
                 ${lib.getExe init-project}
-                ${lib.getExe link-lustre-binaries}
               '';
             };
 
