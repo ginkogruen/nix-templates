@@ -74,3 +74,36 @@ nix flake init -t github:ginkogruen/nix-templates#rust
 ```
 
 </details>
+
+### 🧪 SuperCollider
+
+A template for the music programming language SuperCollider.
+
+<details>
+<summary>⚙️ Setup Instructions</summary>
+
+To setup a new SuperCollider project create a file with the extension `.sc` /
+`.scd`.
+
+Start the IDE with `scide` and the language CLI with `sclang`. There is also a
+neovim package in path with the `scnvim` plugin installed.
+
+</details>
+
+<details>
+<summary>🐚 Init Commands</summary>
+<br>
+
+**Codeberg**:
+
+```sh
+nix flake init -t git+https://codeberg.org/ginkogruen/nix-templates.git#supercollider
+```
+
+**GitHub**:
+
+```sh
+nix flake init -t github:ginkogruen/nix-templates#supercollider
+```
+
+</details>

@@ -21,6 +21,9 @@
 
         rust.path = ./templates/rust;
         rust.description = "Rust";
+
+        supercollider.path = ./templates/supercollider;
+        supercollider.description = "SuperCollider + IDE";
       };
     });
 }
