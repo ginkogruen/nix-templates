@@ -7,13 +7,13 @@ course).
 
 ## Available templates
 
-### Gleam
+### ⭐ Gleam
 
 A template for the functional programming language Gleam running on the BEAM
 virtual machine.
 
 <details>
-<summary>Template shell command</summary>
+<summary>🐚 Init Commands</summary>
 <br>
 
 **Codeberg**:
@@ -30,13 +30,13 @@ nix flake init -t github:ginkogruen/nix-templates#gleam
 
 </details>
 
-### Lustre
+### 🦋 Lustre
 
 A template for working with the Lustre web framework bases on the Gleam
 programming language.
 
 <details>
-<summary>Template shell command</summary>
+<summary>🐚 Init Commands</summary>
 <br>
 
 **Codeberg**:
@@ -53,12 +53,12 @@ nix flake init -t github:ginkogruen/nix-templates#lustre
 
 </details>
 
-### Rust
+### 🦀 Rust
 
 A template for the systems programming language Rust.
 
 <details>
-<summary>Template shell command</summary>
+<summary>🐚 Init Commands</summary>
 <br>
 
 **Codeberg**:
