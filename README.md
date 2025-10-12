@@ -81,6 +81,7 @@ A template for the music programming language SuperCollider.
 
 <details>
 <summary>⚙️ Setup Instructions</summary>
+<br>
 
 To setup a new SuperCollider project create a file with the extension `.sc` /
 `.scd`.
