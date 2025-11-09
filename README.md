@@ -108,3 +108,33 @@ nix flake init -t github:ginkogruen/nix-templates#supercollider
 ```
 
 </details>
+
+### ✳️ Processing (p5.js)
+
+A template for creative coding with the p5.js library using Vite for bundling.
+
+<details>
+<summary>⚙️ Setup Instructions</summary>
+<br>
+
+Run `npm install` and then start Vite with `npx vite`.
+
+</details>
+
+<details>
+<summary>🐚 Init Commands</summary>
+<br>
+
+**Codeberg**:
+
+```sh
+nix flake init -t git+https://codeberg.org/ginkogruen/nix-templates.git#p5js
+```
+
+**GitHub**:
+
+```sh
+nix flake init -t github:ginkogruen/nix-templates#p5js
+```
+
+</details>

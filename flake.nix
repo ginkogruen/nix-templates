@@ -19,6 +19,9 @@
         lustre.path = ./templates/lustre;
         lustre.description = "Lustre + TailwindCSS + Gleam + nix-gleam";
 
+        p5js.path = ./templates/p5js;
+        p5js.description = "Processing (p5.js) + Vite";
+
         rust.path = ./templates/rust;
         rust.description = "Rust";
 
